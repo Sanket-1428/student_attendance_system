@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student-attendance-system"
+version = "1.0.0"
+description = "A modular command-line student attendance manager"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+attendance = "attendance_system.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["attendance_system*"]
